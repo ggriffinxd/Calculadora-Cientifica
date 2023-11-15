@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Instituto_Federal_Marca_2015.svg/1200px-Instituto_Federal_Marca_2015.svg.png"
+      type="image/vnd.microsoft.icon"
+    />
+  </head>
+  <body>
+    <main data-theme="dark">
+      <header class="flex align-center justify-between">
+        <h1>Calculadora Calculista</h1>
+        <button id="themeSwitcher">Switch Theme Dark/Light</button>
+        <a href="./help.html"
+          ><img
+            src="https://cdn.icon-icons.com/icons2/1302/PNG/512/helpbutton_85772.png"
+            alt="help-icon"
+            width="30px"
+            id="buttonHelp"
+        /></a>
+      </header>
+      <input type="text" id="input" />
+      <div id="keys">
+        <button id="clear">C</button>
+        <button class="charKey" data-value=" ( ">(</button>
+        <button class="charKey" data-value=" ) ">)</button>
+        <button class="charKey" data-value=" / ">/</button>
+        <button class="charKey" data-value="7">7</button>
+        <button class="charKey" data-value="8">8</button>
+        <button class="charKey" data-value="9">9</button>
+        <button class="charKey" data-value=" * ">*</button>
+        <button class="charKey" data-value="4">4</button>
+        <button class="charKey" data-value="5">5</button>
+        <button class="charKey" data-value="6">6</button>
+        <button class="charKey" data-value=" - ">-</button>
+        <button class="charKey" data-value="1">1</button>
+        <button class="charKey" data-value="2">2</button>
+        <button class="charKey" data-value="3">3</button>
+        <button class="charKey" data-value=" + ">+</button>
+        <button class="charKey" data-value="0">0</button>
+        <button class="charKey" data-value=".">.</button>
+        <button class="charKey" data-value="/100">%</button>
+        <button class="charKey" data-value=", ">,</button>
+        <button class="charKey" data-value=" Math.pow( ">x<sup>y</sup></button>
+        <button class="charKey" data-value=" Math.sqrt( ">√x</button>
+        <button class="charKey" data-value=" % ">mod</button>
+        <button id="equal">=</button>
+      </div>
+      <section class="flex align-center justify-between">
+        <button id="copyToClipboard">Copy</button>
+        <input type="text" id="result" disabled />
+      </section>
+    </main>
+  </body>
+</html>
